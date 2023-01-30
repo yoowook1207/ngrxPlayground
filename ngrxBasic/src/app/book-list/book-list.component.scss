@@ -1,0 +1,15 @@
+@mixin colored-box($color) {
+    background-color: $color;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.book-list {
+    @include colored-box(lightgray);
+}
+
+.book-item {
+    @include colored-box(rgb(215, 208, 208));
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
